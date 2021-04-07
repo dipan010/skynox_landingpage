@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: whitesmoke;
+}
+
 h1 {
     margin-bottom: 0;
     line-height: 1;
@@ -16,6 +20,12 @@ h2 {
     max-width: 900px;
 }
 
+.row-1 {
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 150px
+}
+
 .column {
     float: left;
     width: 50%;
@@ -23,6 +33,13 @@ h2 {
 }
 
 .row:after {
+    content: "";
+    margin-top: 30px;
+    display: table;
+    clear: both
+}
+
+.row-1:after {
     content: "";
     margin-top: 30px;
     display: table;
